@@ -6,7 +6,7 @@ RSPEC_OPTIONS=
 
 if [ $FILE ];
 then
-  rpsec "$FILE" --format documentation --color
+  time rspec "$FILE" --format documentation --color
 else
-  rspec "$DIR/../spec" --format documentation --color
+  time rspec "$DIR/../spec" --format documentation --color
 fi
